@@ -3,14 +3,16 @@ using BlazorBoilerplate.Storage;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace BlazorBoilerplate.Storage.Migrations.LocalizationDb
 {
     [DbContext(typeof(LocalizationDbContext))]
-    partial class LocalizationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20211012091155_CreateLocalizationDb2")]
+    partial class CreateLocalizationDb2
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
